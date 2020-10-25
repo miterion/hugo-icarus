@@ -1,7 +1,5 @@
-The original Hugo Icarus theme has been unmaintained for years, and as Hugo upgraded, some features broke (such as front-page post listing, recent posts, and post counts). This version fixes such issues.
-
-
 # Icarus
+This is my fork of the reworked Icarus theme with some changes relevant for my blog. You can find the original [here](https://gitlab.com/toryanderson/hugo-icarus).
 
 Icarus is a responsive and customizable theme for bloggers. It's a port of the same-named theme for [Hexo](file://hexo.io) made by [Ruipeng Zhang](https://github.com/ppoffice). Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, localization (l10n) support, syntax highlighting for source code and optional widgets for the sidebar.
 
