@@ -130,14 +130,13 @@ a:visited {
 }
 code {
   margin: 0 2px;
-  color: #e96900;
   padding: 3px 5px;
   font-size: 0.8em;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  background-color: #f8f8f8;
 }
+
 .outer {
   max-width: 1320px;
   margin: 0 auto;
@@ -2100,7 +2099,7 @@ ol.toc {
 }
 .highlight {
   color: #ddd;
-  background: #272822;
+  background-color: #fafafa;
 }
 .highlight .code .tag,
 .highlight .code .keyword,
