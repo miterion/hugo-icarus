@@ -1,0 +1,25 @@
+{
+  "name": "hugo-icarus",
+  "version": "1.0.0",
+  "description": "This is my fork of the reworked Icarus theme with some changes relevant for my blog. You can find the original [here](https://gitlab.com/toryanderson/hugo-icarus).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miterion/hugo-icarus.git"
+  },
+  "author": "Heiko Carrasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miterion/hugo-icarus/issues"
+  },
+  "homepage": "https://github.com/miterion/hugo-icarus#readme",
+  "dependencies": {
+    "fontsource-open-sans": "^3.0.9",
+    "fontsource-source-code-pro": "^3.0.10",
+    "jquery": "^2.1.4",
+    "mathjax": "^2.7.1"
+  }
+}

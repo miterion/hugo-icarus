@@ -1,12 +1,10 @@
 {{ template "_internal/google_analytics.html" . }}
 <script src="{{ "fancybox/jquery.fancybox.pack.js" | absURL }}"></script>
 <script src="{{ "js/script.js" | absURL }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
 
 {{ range .Site.Params.custom_js }}
 <script src="{{ . | absURL }}"></script>
 {{ end }}
-<script>hljs.initHighlightingOnLoad();</script>
 
 {{ if not .Site.Params.disable_mathjax }}
 <script type="text/x-mathjax-config">
@@ -15,5 +13,10 @@ MathJax.Hub.Config({
     inlineMath: [['$','$'], ['\\(','\\)']]}
   });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{{ $mathjax := resources.Get "mathjax/MathJax.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $mathjax.Permalink }}?config=TeX-AMS-MML_HTMLorMML" integrity="{{ $mathjax.Data.Integrity }}"></script>
+{{ $mathmenu := resources.Get "mathjax/extensions/MathMenu.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $mathmenu.Permalink }}" integrity="{{ $mathmenu.Data.Integrity }}"></script>
+{{ $mathzoom := resources.Get "mathjax/extensions/MathZoom.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $mathzoom.Permalink }}" integrity="{{ $mathzoom.Data.Integrity }}"></script>
 {{ end }}
